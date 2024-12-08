@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memento_W", "Memento_W.csproj", "{36A3B737-A8BD-47A5-91E5-3EB4EB543ED2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "..\Model\Model.csproj", "{8F173D46-DFA0-4B75-9CC9-624319D268F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36A3B737-A8BD-47A5-91E5-3EB4EB543ED2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36A3B737-A8BD-47A5-91E5-3EB4EB543ED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36A3B737-A8BD-47A5-91E5-3EB4EB543ED2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36A3B737-A8BD-47A5-91E5-3EB4EB543ED2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F173D46-DFA0-4B75-9CC9-624319D268F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F173D46-DFA0-4B75-9CC9-624319D268F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F173D46-DFA0-4B75-9CC9-624319D268F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F173D46-DFA0-4B75-9CC9-624319D268F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FC3F5361-C363-43F7-B8D0-79F7D398A807}
+	EndGlobalSection
+EndGlobal
