@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Memento_W.Models.ProfileDTO>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a href="@Url.Action("create")">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Profile ID</th>
+            <th>Full Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+            <th>School</th>
+            <th>City</th>
+            <th>CreatedAt</th>
+            <th>UpdatedAt</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ProfileId</td>
+                <td>@item.FullName</td>
+                <td>@item.Age</td>
+                <td>@item.Grade</td>
+                <td>@item.School</td>
+                <td>@item.City</td>
+                <td>@item.CreatedAt</td>
+                <td>@item.UpdatedAt</td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ProfileId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.ProfileId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ProfileId })
+                </td>
+            </tr>
+        }
+        @if (ViewBag.Profiles != null)
+        {
+            <tr>
+                <td colspan="8" style="text-align:center">
+                    @ViewBag.Profiles
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
